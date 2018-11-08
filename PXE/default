@@ -1,0 +1,17 @@
+default vesamenu.c32                  //默认交给图形模块处理
+
+timeout 600                           //选择限时为60秒（单位1/10秒）
+
+.. ..
+menu title  PXE  Installation  Server //启动菜单标题信息
+.. ..
+label  linux                          //菜单项标签
+
+    menu  label  ^Install Red Hat Enterprise Linux 7
+
+    kernel  rhel7/vmlinuz             //内核的位置
+
+    append  initrd=rhel7/initrd.img ks=http://192.168.4.254/ks-rhel7.cfg                                     //初始镜像、应答文件位置
+
+    menu  default                     //默认启动方式
+menu  end

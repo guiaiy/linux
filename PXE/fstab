@@ -1,0 +1,2 @@
+在文件最后以行添加一行：
+/ISO/rhel-server-7.2-x86_64-dvd.iso（光盘路径）  /var/www/html/rh7dvd(需要事先创建文件夹rh7dvd)  iso9660  defaults  0  0   （这是一行，不要换行）

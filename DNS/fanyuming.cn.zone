@@ -1,0 +1,12 @@
+$TTL 1D                           //文件开头部分可保持不改
+@   IN SOA  @ rname.invalid. (
+                    0   ; serial
+                    1D  ; refresh
+                    1H  ; retry
+                    1W  ; expire
+                    3H )    ; minimum
+@       NS  svr7.fanyuming.cn.         //本区域DNS服务器的FQDN
+fanyuming.cn. NS svr7 		  //本区域DNS服务器的FQDN(另一种写法)
+svr7    A   192.168.4.7           //为NS主机提供A记录
+pc207   A   192.168.4.207         //其他正向地址记录.. ..
+*	A   192.168.4.100         //泛域名解析地址

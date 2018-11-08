@@ -1,0 +1,13 @@
+$TTL 1D                           //文件开头部分可保持不改
+@   IN SOA  @ rname.invalid. (
+                    0   ; serial
+                    1D  ; refresh
+                    1H  ; retry
+                    1W  ; expire
+                    3H )    ; minimum
+@       NS  svr7.fu.cn.         //本区域DNS服务器的FQDN
+fu.cn. NS svr7 	                //本区域DNS服务器的FQDN(另一种写法)
+zi.fu.cn. NS pc207              //子区域及子DNS主机名
+svr7    A   192.168.4.7         //父DNS的IP地址
+pc207   A   192.168.4.207       //子DNS的IP地址
+www  A   192.168.4.100          //其他正向地址记录.. ..

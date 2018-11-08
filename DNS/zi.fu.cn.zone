@@ -1,0 +1,11 @@
+$TTL 1D                           //文件开头部分可保持不改
+@   IN SOA  @ rname.invalid. (
+                    0   ; serial
+                    1D  ; refresh
+                    1H  ; retry
+                    1W  ; expire
+                    3H )    ; minimum
+@       NS  pc207.zi.fu.cn.       //本区域DNS服务器的FQDN
+zi.fu.cn. NS pc207 		  //本区域DNS服务器的FQDN(另一种写法)
+pc207   A   192.168.4.207         //其他正向地址记录.. ..
+www  A   1.2.3.4                  //其他正向地址记录.. ..

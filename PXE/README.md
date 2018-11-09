@@ -1,11 +1,11 @@
 http://note.youdao.com/noteshare?id=8cf2c43b32003ac2a7acf50929031f41
 
 - #### 软件包
-    - #####  <httpd>                      通过web服务将光盘镜像发布
-    - #####  <dhcp>                       为机器提供ip地址
-    - #####  <tftp-server> <tftp>         存放各种必需文件
-    - #####  <syslinux>                   引导文件
-    - #####  <system-config-kickstart>    生成应答文件
+    - #####  < httpd >                      通过web服务将光盘镜像发布
+    - #####  < dhcp >                       为机器提供ip地址
+    - #####  < tftp-server > < tftp >         存放各种必需文件
+    - #####  < syslinux >                   引导文件
+    - #####  < system-config-kickstart >    生成应答文件
 - #### 基本步骤
     - ##### 修改 ==/etc/fstab== <[挂载光盘](https://github.com/guiaiy/linux/blob/master/PXE/fstab)> 
     - ##### 修改  ==/etc/dhcp/dhcp.conf== <[配置DHCP](https://github.com/guiaiy/linux/blob/master/PXE/dhcp.conf)>

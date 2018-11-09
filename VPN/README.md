@@ -20,7 +20,7 @@ http://note.youdao.com/noteshare?id=e054b7e788d2d668eb6b061e4b0b5684
         - #### 在另一台主机作同样的配置，但是ip应该是镜像关系
 ---
 - ## PPTP
-    - ### 软件包 <pptpd>
+    - ### 软件包 < pptpd >
     - ### 配置
         -  ##### 路径： <==/etc/pptpd.conf==> <==/etc/ppp/options.pptpd==> <==/etc/ppp/chap-secrets==>
         - ##### 文件：     <[pptpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/pptpd.conf)>         <[options.pptpd](https://github.com/guiaiy/linux/blob/master/VPN/options.pptpd)>             <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>
@@ -28,7 +28,7 @@ http://note.youdao.com/noteshare?id=e054b7e788d2d668eb6b061e4b0b5684
         - ##### 运行命令< iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -j SNAT --to-source 201.1.2.5>使用NAT技术将私网ip转换成
 ---
 - ## Lt2p&IPSec
-    - ### 软件包 <libreswan> <xl2tpd>
+    - ### 软件包 < libreswan > < xl2tpd >
     - ### 配置
         - ##### libreswan路径： <==/etc/ipsec.d/myipsec.conf==> <==/etc/ipsec.d/mypass.secret==>
         - ##### libreswan文件： <[myipsec.conf](https://github.com/guiaiy/linux/blob/master/VPN/myipsec.conf)>                   <[mypass.secret](https://github.com/guiaiy/linux/blob/master/VPN/mypass.secrets)>

@@ -10,6 +10,6 @@ nodefaultroute
 debug
 proxyarp
 connect-delay 5000
-require-mschap-v2
-#crtscts
+require-mschap-v2	###取消注释，设置加密方式
+#crtscts   		###注释掉下面两行
 #lock

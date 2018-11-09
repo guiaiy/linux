@@ -22,15 +22,16 @@ https://note.youdao.com/web/#/file/recent/markdown/WEB8b1173a9c81f8b7e7c927d13f4
 - ## PPTP
     - ### 软件包 <pptpd>
     - ### 配置
-        -  ##### 路径： ==/etc/pptpd.conf== ==/etc/ppp/options.pptpd== ==/etc/ppp/chap-secrets==
+        -  ##### 路径： <==/etc/pptpd.conf==> <==/etc/ppp/options.pptpd==> <==/etc/ppp/chap-secrets==>
         - ##### 文件：     <[pptpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/pptpd.conf)>         <[options.pptpd](https://github.com/guiaiy/linux/blob/master/VPN/options.pptpd)>             <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>
         - ##### 运行命令<echo "1" > /proc/sys/net/ipv4/ip_forward>开启路由转发
         - ##### 运行命令< iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -j SNAT --to-source 201.1.2.5>使用NAT技术将私网ip转换成
 ---
 - ## Lt2p&IPSec
-- ### 软件包 <libreswan> <xl2tpd>
-- ### 配置
-- #### libreswan路径： <==/etc/ipsec.conf==> <==/etc/ipsec.d/myipsec.conf==> <==/etc/ipsec.d/mypass.secret==>
-- #### libreswan文件：      <[ipsec.conf](https://github.com/guiaiy/linux/blob/master/VPN/ipsec.conf)>                 <[myipsec.conf](https://github.com/guiaiy/linux/blob/master/VPN/myipsec.conf)>                   <[mypass.secret](https://github.com/guiaiy/linux/blob/master/VPN/mypass.secrets)>
-- ##### 进程名：<==pluto==>
-- #### xl2tpd路径： <==/etc/xl2tpd/xl2tpd.conf==>
+    - ### 软件包 <libreswan> <xl2tpd>
+    - ### 配置
+        - ##### libreswan路径： <==/etc/ipsec.d/myipsec.conf==> <==/etc/ipsec.d/mypass.secret==>
+        - ##### libreswan文件： <[myipsec.conf](https://github.com/guiaiy/linux/blob/master/VPN/myipsec.conf)>                   <[mypass.secret](https://github.com/guiaiy/linux/blob/master/VPN/mypass.secrets)>
+        - ###### libreswan 进程名：<==pluto==>
+        - ##### xl2tpd路径： <==/etc/xl2tpd/xl2tpd.conf==> <==/etc/ppp/options.xl2tpd==> <==/etc/ppp/chap-secrets==>
+        - ##### xl2tpd文件：       <[xl2tpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/xl2tpd.conf)>                       <[options.xl2tpd](https://github.com/guiaiy/linux/blob/master/VPN/options.xl2tpd)>              <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>

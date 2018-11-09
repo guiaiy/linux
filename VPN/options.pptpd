@@ -4,7 +4,7 @@ refuse-chap
 refuse-mschap
 require-mschap-v2
 require-mppe-128
-ms-dns 8.8.8.8
+ms-dns 8.8.8.8 		###设置一个可用的dns
 proxyarp
 lock
 nobsdcomp 

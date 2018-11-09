@@ -1,4 +1,4 @@
-https://note.youdao.com/web/#/file/recent/markdown/WEBf6d4d5176f2518285c2495335ed1d22d/
+http://note.youdao.com/noteshare?id=c0406fd5ecf454db431701e22f15629a
 
 
 - ### 软件包 <chrony>

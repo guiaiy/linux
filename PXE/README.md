@@ -1,4 +1,4 @@
-https://note.youdao.com/web/#/file/WEBfbb3fd3f05a69f9238217f98b921a07f/markdown/WEBc7da725e43fc554224beb1ce9e3f93c5/
+http://note.youdao.com/noteshare?id=8cf2c43b32003ac2a7acf50929031f41
 
 - #### 软件包
     - #####  <httpd>                      通过web服务将光盘镜像发布

@@ -1,6 +1,6 @@
 - ## GRE    
     - ### 步骤
-        - ##### 通过命令<modprobe ip_gre>启动模块
+        - ##### 通过命令<==modprobe ip_gre==>启动模块
         - ##### 通过命令<ip tunnel add “隧道名” mode “模式” remote “对方ip” local “我方ip”>建立隧道
             - ip tunnel add tun0  mode gre remote 201.1.2.5 local 201.1.2.10
             - ip tunnel add创建隧道（隧道名称为tun0），ip tunnel help可以查看帮助
@@ -20,6 +20,9 @@
 - ### 软件包 <pptpd>
 - ### 配置文件 
 - #### 路径： ==/etc/pptpd.conf== ==/etc/ppp/options.pptpd== ==/etc/ppp/chap-secrets==
-- #### 文件：     <[pptpd.conf]()>         <[options.pptpd]()>             <[chap-secrets]()>
+- #### 文件：     <[pptpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/pptpd.conf)>         <[options.pptpd](https://github.com/guiaiy/linux/blob/master/VPN/options.pptpd)>             <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>
 - ### 运行命令<echo "1" > /proc/sys/net/ipv4/ip_forward>开启路由转发
 - ### 运行命令< iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -j SNAT --to-source 201.1.2.5>使用NAT技术将私网ip转换成公网ip
+---
+- ## PPTP
+  

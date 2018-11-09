@@ -1,3 +1,5 @@
+http://note.youdao.com/noteshare?id=3919a2bfcf3758d0f7a078ca9875f5b1
+
 - ### 软件包
   - #### < subversion >
 - ### 步骤

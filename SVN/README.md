@@ -5,5 +5,5 @@
   - #### 运行命令< svn import 目录|文件  file:///var/svn/project/ >将目录或文件导入库
   - #### 修改配置文件
     - #### 路径 <==/var/svn/project/conf/==>
-    - #### <[svnserve(https://github.com/guiaiy/linux/blob/master/SVN/svnserve.conf)]> <[passwd](https://github.com/guiaiy/linux/blob/master/SVN/svnserve.conf)> <[authz](https://github.com/guiaiy/linux/blob/master/SVN/authz)>
+    - #### <[svnserve](https://github.com/guiaiy/linux/blob/master/SVN/svnserve.conf)> <[passwd](https://github.com/guiaiy/linux/blob/master/SVN/svnserve.conf)> <[authz](https://github.com/guiaiy/linux/blob/master/SVN/authz)>
 

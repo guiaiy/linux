@@ -1,3 +1,6 @@
+https://note.youdao.com/web/#/file/recent/markdown/WEB8b1173a9c81f8b7e7c927d13f45552dc/
+
+
 - ## GRE    
     - ### 步骤
         - ##### 通过命令<==modprobe ip_gre==>启动模块
@@ -17,12 +20,17 @@
         - #### 在另一台主机作同样的配置，但是ip应该是镜像关系
 ---
 - ## PPTP
-- ### 软件包 <pptpd>
-- ### 配置文件 
-- #### 路径： ==/etc/pptpd.conf== ==/etc/ppp/options.pptpd== ==/etc/ppp/chap-secrets==
-- #### 文件：     <[pptpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/pptpd.conf)>         <[options.pptpd](https://github.com/guiaiy/linux/blob/master/VPN/options.pptpd)>             <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>
-- ### 运行命令<echo "1" > /proc/sys/net/ipv4/ip_forward>开启路由转发
-- ### 运行命令< iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -j SNAT --to-source 201.1.2.5>使用NAT技术将私网ip转换成公网ip
+    - ### 软件包 <pptpd>
+    - ### 配置
+        -  ##### 路径： ==/etc/pptpd.conf== ==/etc/ppp/options.pptpd== ==/etc/ppp/chap-secrets==
+        - ##### 文件：     <[pptpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/pptpd.conf)>         <[options.pptpd](https://github.com/guiaiy/linux/blob/master/VPN/options.pptpd)>             <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>
+        - ##### 运行命令<echo "1" > /proc/sys/net/ipv4/ip_forward>开启路由转发
+        - ##### 运行命令< iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -j SNAT --to-source 201.1.2.5>使用NAT技术将私网ip转换成
 ---
-- ## PPTP
-  
+- ## Lt2p&IPSec
+- ### 软件包 <libreswan> <xl2tpd>
+- ### 配置
+- #### libreswan路径： <==/etc/ipsec.conf==> <==/etc/ipsec.d/myipsec.conf==> <==/etc/ipsec.d/mypass.secret==>
+- #### libreswan文件：      <[ipsec.conf](https://github.com/guiaiy/linux/blob/master/VPN/ipsec.conf)>                 <[myipsec.conf](https://github.com/guiaiy/linux/blob/master/VPN/myipsec.conf)>                   <[mypass.secret](https://github.com/guiaiy/linux/blob/master/VPN/mypass.secrets)>
+- ##### 进程名：<==pluto==>
+- #### xl2tpd路径： <==/etc/xl2tpd/xl2tpd.conf==>

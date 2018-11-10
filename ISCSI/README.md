@@ -22,7 +22,7 @@
      - ##### 运行< man iscsiadm >查看发现存储的命令并执行
      - ##### 分区挂载
 - ### 多路径
-    - #### 软件包 < device-mapper-multipath-libs.i686 >
+    - #### 软件包 < device-mapper-multipath >
     - #### 配置
       - ##### 通过命令 < /usr/lib/udev/scsi_id --whitelisted --device=/dev/sdb >获取wwid，两个磁盘应该相同
       - ##### 路径 <==/usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf==>需要拷贝到/etc下

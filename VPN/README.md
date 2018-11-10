@@ -1,6 +1,3 @@
-http://note.youdao.com/noteshare?id=e054b7e788d2d668eb6b061e4b0b5684
-
-
 - ## GRE    
     - ### 步骤
         - ##### 通过命令<==modprobe ip_gre==>启动模块
@@ -35,3 +32,4 @@ http://note.youdao.com/noteshare?id=e054b7e788d2d668eb6b061e4b0b5684
         - ###### libreswan 进程名：<==pluto==>
         - ##### xl2tpd路径： <==/etc/xl2tpd/xl2tpd.conf==> <==/etc/ppp/options.xl2tpd==> <==/etc/ppp/chap-secrets==>
         - ##### xl2tpd文件：       <[xl2tpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/xl2tpd.conf)>                       <[options.xl2tpd](https://github.com/guiaiy/linux/blob/master/VPN/options.xl2tpd)>              <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>
+---

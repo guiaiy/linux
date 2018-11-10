@@ -28,3 +28,4 @@
       - ##### 路径 <==/usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf==>需要拷贝到/etc下
           - ##### cp /usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf /etc/
       - ##### 文件 < [multipath.conf]()>
+          - #### 首先卸载其他挂载，再启动服务，然后挂载

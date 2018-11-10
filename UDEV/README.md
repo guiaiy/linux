@@ -6,4 +6,4 @@
         - ##### udevadm info --query=all --attribute-walk --path=/block/sda
     - #### 修改配置
         - ##### 路径 <==/etc/udev/rules.d/==>
-        - ##### 自建文件 <[70-usb.rules]()> 创建规则
+        - ##### 自建文件 <[70-usb.rules](https://github.com/guiaiy/linux/blob/master/UDEV/70-usb.rules)> 创建规则

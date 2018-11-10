@@ -1,6 +1,3 @@
-http://note.youdao.com/noteshare?id=43eb3018c1d77c35caa90c7c80d03fc9
-
-
 - #### 软件包
 	 - ##### < bind > < bindchroot >
 - #### 服务名
@@ -20,4 +17,4 @@ http://note.youdao.com/noteshare?id=43eb3018c1d77c35caa90c7c80d03fc9
 	- ##### cp -p named.locahost default.cn.zone
 	- ##### ==配置文件与地址库文件一一对应==
 	
-
+---

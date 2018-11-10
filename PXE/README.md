@@ -1,5 +1,3 @@
-http://note.youdao.com/noteshare?id=8cf2c43b32003ac2a7acf50929031f41
-
 - #### 软件包
     - #####  < httpd >                      通过web服务将光盘镜像发布
     - #####  < dhcp >                       为机器提供ip地址
@@ -12,3 +10,4 @@ http://note.youdao.com/noteshare?id=8cf2c43b32003ac2a7acf50929031f41
     - ##### 运行kickstart生成<[应答文件](https://github.com/guiaiy/linux/blob/master/PXE/ks7.cfg)>到 ==/var/www/html/== 
     - ##### 搭建TFTP服务器并<[部署启动文件](https://github.com/guiaiy/linux/blob/master/PXE/start.sh)>到 ==/var/lib/tftpboot/== 
     - ##### 修改 ==/var/lib/tftpboot/pxelinux.cfg/default/== <[调整启动参数](https://github.com/guiaiy/linux/blob/master/PXE/default)>
+---

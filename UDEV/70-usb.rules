@@ -1,0 +1,2 @@
+ACTION=="add",ENV{ID_VENDOR}=="General",ENV{ID_SERIAL}=="General_UDisk-0:0",SYMLINK+="usbgal",RUN+="/usr/bin/systemctl start httpd"
+ACTION=="remove",ENV{ID_VENDOR}=="General",ENV{ID_SERIAL}=="General_UDisk-0:0",RUN+="/usr/bin/systemctl stop httpd"

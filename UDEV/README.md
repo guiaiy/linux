@@ -1,0 +1,9 @@
+- ### 步骤
+    - #### 查看设备属性  
+        - ##### udevadm monitor --property (动态)
+        - ##### udevadm info --query=path --name=/dev/sda (查看sys下绝对路径，结果为==/block/sda==)
+        - ##### udevadm info --query=property --path=/block/sda (查看那属性)
+        - ##### udevadm info --query=all --attribute-walk --path=/block/sda
+    - #### 修改配置
+        - ##### 路径 <==/etc/udev/rules.d/==>
+        - ##### 自建文件 <[70-usb.rules]()> 创建规则

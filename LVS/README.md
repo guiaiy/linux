@@ -8,4 +8,13 @@
         - ##### 运行命令< echo "1" > /proc/sys/net/ipv4/ip_forward >开启路由转发(临时)
         - ##### 运行命令< echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf > 开启路由转发(永久)
     - ##### 运行命令< ipvsadm-save -n /etc/sysconfig/ipvsadm >永久保存配置
-    - ##### 运行命令< echo '/usr/sbin/ipvsadm -R </etc/sysconfig/ipvsadm' >> /etc/rc.d/rc.loca >开机自动启动   
+    - ##### 运行命令< echo '/usr/sbin/ipvsadm -R </etc/sysconfig/ipvsadm' >> /etc/rc.d/rc.loca >开机自动启动  
+---
+- #### DR模式
+  - ##### 调度器设置新的VIP
+    - ##### 模板<[/etc/sysconfig/network-scripts/ifcfg-eth0:0]()>
+  - ##### 服务器设置新的VIP
+    - ##### 模板<[/etc/sysconfig/network-scripts/ifcfg-eth0:0]()>
+  - ##### 服务器修改内核防止ip冲突
+    - ##### 模板<[/etc/sysctl.conf]>
+  - ##### 重起< network >服务  

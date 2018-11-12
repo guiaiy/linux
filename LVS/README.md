@@ -3,3 +3,9 @@
   - ##### <[ipvsadm语法案例](https://github.com/guiaiy/linux/blob/master/LVS/%E6%A1%88%E4%BE%8B.png)>
 ---
 - #### NAT模式
+  - ##### 按照案例输入命令即可,有一些地方需要注意
+    - ##### 调度器的路由转发必须打开
+        - ##### 运行命令< echo "1" > /proc/sys/net/ipv4/ip_forward >开启路由转发(临时)
+        - ##### 运行命令< echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf > 开启路由转发(永久)
+    - ##### 运行命令< ipvsadm-save -n /etc/sysconfig/ipvsadm >永久保存配置
+    - ##### 运行命令< echo '/usr/sbin/ipvsadm -R </etc/sysconfig/ipvsadm' >> /etc/rc.d/rc.loca >开机自动启动   

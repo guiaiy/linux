@@ -1,3 +1,5 @@
 - ####  软件包 < ipvsadm > ---> 用于管理内核
   - ##### <[ipvsadm常用命令](https://github.com/guiaiy/linux/blob/master/LVS/%E9%80%89%E9%A1%B9.png)>
   - ##### <[ipvsadm语法案例](https://github.com/guiaiy/linux/blob/master/LVS/%E6%A1%88%E4%BE%8B.png)>
+---
+- #### NAT模式

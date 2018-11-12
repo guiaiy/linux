@@ -12,9 +12,12 @@
 ---
 - #### DR模式
   - ##### 调度器设置新的VIP
-    - ##### 模板<[/etc/sysconfig/network-scripts/ifcfg-eth0:0]()>(最好通过复制修改)
-  - ##### 服务器设置新的VIP
-    - ##### 模板<[/etc/sysconfig/network-scripts/lo0:0]()>
-  - ##### 服务器修改内核防止ip冲突
-    - ##### 模板<[/etc/sysctl.conf]>
+    - ##### 模板<[/etc/sysconfig/network-scripts/ifcfg-eth0:0](https://github.com/guiaiy/linux/blob/master/LVS/ifcfg-eth0:0)>(最好通过复制修改)
+  - ##### 所有服务器设置新的VIP
+    - ##### 模板<[/etc/sysconfig/network-scripts/lo0:0](https://github.com/guiaiy/linux/blob/master/LVS/ifcfg-lo:0)>
+  - ##### 所有服务器修改内核防止ip冲突
+    - ##### 模板<[/etc/sysctl.conf](https://github.com/guiaiy/linux/blob/master/LVS/sysctl.conf)>
   - ##### 重起< network >服务  
+  - ##### 调度器也需要开启路由转发,ipvsadm也需要永久保存,开机自动启动
+---
+- #### LVS不支持健康检查,需要自己写一个脚本<[lvscheck.sh](https://github.com/guiaiy/linux/blob/master/LVS/sysctl.conf)>

@@ -12,7 +12,7 @@
 ---
 - #### DR模式
   - ##### 调度器设置新的VIP
-    - ##### 模板<[/etc/sysconfig/network-scripts/ifcfg-eth0:0]()>
+    - ##### 模板<[/etc/sysconfig/network-scripts/ifcfg-eth0:0]()> --->最好通过复制修改
   - ##### 服务器设置新的VIP
     - ##### 模板<[/etc/sysconfig/network-scripts/lo0:0]()>
   - ##### 服务器修改内核防止ip冲突

@@ -20,4 +20,4 @@
   - ##### 重起< network >服务  
   - ##### 调度器也需要开启路由转发,ipvsadm也需要永久保存,开机自动启动
 ---
-- #### LVS不支持健康检查,需要自己写一个脚本<[lvscheck.sh](https://github.com/guiaiy/linux/blob/master/LVS/sysctl.conf)>
+- #### LVS不支持健康检查,需要自己写一个脚本<[lvscheck.sh](https://github.com/guiaiy/linux/blob/master/LVS/lvscheck.sh)>

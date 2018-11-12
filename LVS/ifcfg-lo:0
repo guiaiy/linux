@@ -1,0 +1,9 @@
+DEVICE=lo  修改为lo:0
+IPADDR=127.0.0.1 修改为192.168.4.15
+NETMASK=255.0.0.0 修改为255.255.255.255
+NETWORK=127.0.0.0 修改为192.168.4.15
+# If you're having problems with gated making 127.0.0.0/8 a martian,
+# you can change this to something else (255.255.255.255, for example)
+BROADCAST=127.255.255.255 修改为192.168.4.15
+ONBOOT=yes
+NAME=loopback 修改为lo:0

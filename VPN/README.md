@@ -21,7 +21,8 @@
     - ### 配置
         -  ##### 路径： <==/etc/pptpd.conf==> <==/etc/ppp/options.pptpd==> <==/etc/ppp/chap-secrets==>
         - ##### 文件：     <[pptpd.conf](https://github.com/guiaiy/linux/blob/master/VPN/pptpd.conf)>         <[options.pptpd](https://github.com/guiaiy/linux/blob/master/VPN/options.pptpd)>             <[chap-secrets](https://github.com/guiaiy/linux/blob/master/VPN/chap-secrets)>
-        - ##### 运行命令<echo "1" > /proc/sys/net/ipv4/ip_forward>开启路由转发
+        - ##### 运行命令< echo "1" > /proc/sys/net/ipv4/ip_forward >开启路由转发(临时)
+        - ##### 运行命令< echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf > 开启路由转发(永久)
         - ##### 运行命令< iptables -t nat -A POSTROUTING -s 192.168.3.0/24 -j SNAT --to-source 201.1.2.5>使用NAT技术将私网ip转换
 ---
 - ## Lt2p&IPSec

@@ -6,14 +6,14 @@
             - ip tunnel add创建隧道（隧道名称为tun0），ip tunnel help可以查看帮助
             - mode设置隧道使用gre模式
             - local后面跟本机的IP地址，remote后面是与其他主机建立隧道的对方IP地址
-            - 可以通过<ip link>查看
+            - 可以通过< ip link >查看
 
         -  ##### 通过命令<ip link set “隧道名” up> 启动隧道
         - ##### 通过命令<ip addr add *.*.*.*/24 peer *.*.*.*/24 dev “隧道名”>为隧道设置ip
             - ip addr add 10.10.10.10/24 peer 10.10.10.5/24 dev tun0
             - 为隧道tun0设置本地IP地址（10.10.10.10.10/24）
             - 隧道对面的主机IP的隧道IP为10.10.10.5/24
-            - 通过< ip a s  >查看
+            - 通过< ip a s >查看
         - #### 在另一台主机作同样的配置，但是ip应该是镜像关系
 ---
 - ## PPTP

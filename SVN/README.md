@@ -6,8 +6,8 @@
   - #### 修改配置文件
     - #### 路径 <==/var/svn/project/conf/==>
     - #### <[svnserve](https://github.com/guiaiy/linux/blob/master/SVN/svnserve.conf)> <[passwd](https://github.com/guiaiy/linux/blob/master/SVN/passwd)> <[authz](https://github.com/guiaiy/linux/blob/master/SVN/authz)>
-  - #### 运行命令< svnserve -d -r /var/svn/ >启动服务 “/var/svn/” 设置为根目录
-  - #### 客户端运行命令< svn co svn://服务端ip/project 目录>同步文件到目录
+  - #### 运行命令< svnserve -d -r /var/svn/ >启动服务并且将“/var/svn/” 设置为根目录
+  - #### 客户端运行命令< svn co svn://服务端ip/project code >同步根目录下project内的文件到本地目录code（自动创建）
   - #### 第一次运行需要添加选项--username=  --password=
   - #### 其他命令运行< svn --help >查看
 ---

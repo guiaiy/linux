@@ -12,7 +12,7 @@
     - #### 主配置机器运行 < ceph-deploy mon create-initial >
     - #### 因为需要做缓存，需要将<==/dev/vdb==>分成2个区，分别做<==/dev/vdc==>和<==/dev/vdd==>的缓存
     - #### 为分区 < ==/dev/vdb1==/dev/vdb2 > 设置权限
-    - #### 运行 < ceph-deploy osd create node1:vdc:/dev/vdb1 node1:vdc:/dev/vdb2 >为node1创建osd
+    - #### 运行 < ceph-deploy osd create node1:vdc:/dev/vdb1 node1:vdd:/dev/vdb2 >为node1创建osd
     - #### 其他两台做同样的操作
     - #### ceph -s 确认状态，OK为完成状态
     - #### 运行 < rbd create demo-image(镜像名) --image-feature  layering --size 10G >

@@ -18,7 +18,7 @@
     - #### 运行 < rbd create demo-image(镜像名) --image-feature  layering --size 10G >
     - #### 或者 < rbd create rbd/image（镜像名） --image-feature layering --size 10 G > 创建镜像
     - #### 通过 < rbd resize > 调整镜像大小
-    - #### 运行 < rbd map image > 发现镜像，需要软件包 < ceph-common >
+    - #### 运行 < rbd map image > 发现镜像，需要软件包 < ceph-common > 以及配置文件 < ==/etc/ceph/ceph.conf==/etc/ceph/ceph.client.admin.kering== >
     - #### 运行 < rbd snap create image(镜像名) --snap image-snap1(快照名) > 创建快照
     - #### 运行 < rbd snap protect image --snap image-snap1 > 禁止任何人删除快照
     - #### 运行 < rbd snap unprotect image-snap1 > 取消保护

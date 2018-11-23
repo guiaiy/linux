@@ -12,6 +12,7 @@ wget --no-check-certificate https://raw.github.com/robbyrussell/oh-my-zsh/master
 break
 done
 wait
+chmod +x /root/.oh-my-zsh/oh-my-zsh.sh
 sleep 1
 sed -i "/ZSH_THEME=/d"  /root/.zshrc
 sed -i '11a ZSH_THEME="gnzh"' /root/.zshrc
@@ -28,4 +29,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 grep 'zsh-syntax-highlighting' ~/.zshrc || echo 'source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
-source ~/.zshrc
+grep 'zshrc'  /etc/rc.d/rc.local || echo '[ -f ~/.zshrc ] && source ~/.zshrc' >> /etc/rc.d/rc.local
+wait
+sleep 1
+/usr/sbin/reboot

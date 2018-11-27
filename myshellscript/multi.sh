@@ -8,13 +8,11 @@ do
         echo >&3                   #&3代表引用文件描述符3，这条命令代表往管道里面放入了一个"令牌"
 done
  
-for ((i=1;i<=200;i++))
+for i in {51..56}
 do
 read -u3                           #代表从管道中读取一个令牌
 {
-p=$[RANDOM%10+1]
-        sleep $p  #sleep 1用来模仿执行一条命令需要花费的时间（可以用真实命令来代替）
-        echo 'success'$i       
+	ssh -o StrictHostKeyChecking=no 192.168.4.$i "yum -y install perl-\*"
         echo >&3                   #代表我这一次命令执行到最后，把令牌放回管道
 }&
 done

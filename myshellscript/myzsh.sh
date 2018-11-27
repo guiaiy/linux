@@ -30,6 +30,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 grep 'zsh-syntax-highlighting' ~/.zshrc || echo 'source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
 grep 'zshrc'  /etc/rc.d/rc.local || echo '[ -f ~/.zshrc ] && source ~/.zshrc' >> /etc/rc.d/rc.local
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 wait
 sleep 1
 /usr/sbin/reboot

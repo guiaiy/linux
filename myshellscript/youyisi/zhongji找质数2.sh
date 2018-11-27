@@ -35,11 +35,11 @@ cat /mnt/质数表.txt
 #将比质数表大的数字i全部存入2.txt
 for i in `seq $[p+1] $z`
 do
-num[i]=$i
+echo $i >> 2.txt
 done
 
 #2.txt里面的每一个数字除以每一个小于他的质数，如果都不能被除尽，则为新的质数，存入质数表
-for j in ${num[@]}
+for j in `cat 2.txt`
 do
 m=1
 	for k in `cat /mnt/质数表.txt`
@@ -60,3 +60,4 @@ date
 rm -rf 2.txt
 stop_time=`date +%s`
 echo "TIME:`expr $stop_time - $start_time`"
+

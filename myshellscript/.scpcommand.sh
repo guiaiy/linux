@@ -7,8 +7,8 @@ read -p '请输入脚本位置(原脚本直接回车)： '  lo
 location=${lo:-$location}
 chmod +x $location
 ping -c2 $ip &>/dev/null
-[ $? -ne 0 ] && continue
-[ ! -f $location ] && continue
+[ $? -ne 0 ] && exit
+[ ! -f $location ] && exit
 sh=${location##*/}
 pssh -t 3 -H $ip pwd &>/dev/null
 if [ $? -ne 0 ];then

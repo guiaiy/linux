@@ -35,6 +35,7 @@ mountpoint="/media/virtimage"
 	###排除回环网卡
 	[[ $i =~ lo ]] && continue
 	ip=`awk -F= '/IPADDR/{print $2}' /media/virtimage/etc/sysconfig/network-scripts/ifcfg-$i`
+	ssh root@$ip "pwd" &> /dev/null && break
 	done
 	#### 一次很难卸载干净，因此采用while监控，直到卸载为止
 	while :
@@ -48,5 +49,5 @@ mountpoint="/media/virtimage"
 	#### 将主机名，ip信息加入缓存，删除缓存可能存在的空行
 	echo "$1 $ip" >> /tmp/.godatabase
 	sed -i "/^$/d" /tmp/.godatabase
-	ssh -X root@$ip
+	ssh -X root@$ip && exit
 fi

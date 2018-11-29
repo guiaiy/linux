@@ -7,5 +7,5 @@
     - ##### 80
 - #### 配置文件
     -  ##### 路径：==/etc/httpd/conf.d/==
-    - ##### 文件：<[域名配置文件](https://github.com/guiaiy/linxu/blob/master/Apache/vir.conf)> <[加密web配置文件](https://github.com/guiaiy/linxu/blob/master/Apache/ssl.conf)> <[acl权限设置文件](https://github.com/guiaiy/linxu/blob/master/Apache/dir.conf)>
+    - ##### 文件：<[域名配置文件](https://github.com/guiaiy/linxu/blob/master/Apache/vir.conf.md)> <[加密web配置文件](https://github.com/guiaiy/linxu/blob/master/Apache/ssl.conf.md)> <[acl权限设置文件](https://github.com/guiaiy/linxu/blob/master/Apache/dir.conf.md)>
 ---

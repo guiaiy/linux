@@ -1,14 +1,14 @@
 - ####  <VirtualHost *:80> ----->端口
 - ####  ServerName server0.example.com ----->域名
 - ####  DocumentRoot /var/www/html ----->网页路径
-- ####  </VirtualHost> ----->结束语
+- ####  \<\/VirtualHost\> ----->结束语
 - ####  <VirtualHost *:80>
 - ####  ServerName www0.example.com
 - ####  DocumentRoot /var/www/virtual
-- ####  </VirtualHost>
+- ####  \<\/VirtualHost\>
 - ####  Listen 8909 ----->非80端口监听
 - ####  <VirtualHost *:8909>
 - ####  ServerName webapp0.example.com
 - ####  DocumentRoot /var/www/web
 - ####  WsgiScriptAlias / /var/www/web/webinfo.wsgi ----->动静分离
-- ####  </VirtualHost>
+- ####  \<\/VirtualHost\>

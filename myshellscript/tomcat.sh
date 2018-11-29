@@ -1,4 +1,5 @@
 #!/bin/bash
+url="https://github.com/guiaiy/linux"
 prefix=/usr/local/tomcat
 ####################判断ip##########################
 eth=`nmcli connection show |  head -2 |awk '$1~/eth/{print $1}'`
@@ -8,7 +9,7 @@ sip=${sip%.*}.254
 ####################下载并安装所需资源##########################
 mkdir /root/tomcat/
 cd /root/tomcat/
-wget ftp://$sip/lnmp_soft/apache-tomcat-8.0.30.tar.gz
+wget $url/tools/lnmp_soft/apache-tomcat-8.0.30.tar.gz
 tar -xf apache-tomcat-8.0.30.tar.gz
 mv /root/tomcat/apache-tomcat-8.0.30 $prefix
 

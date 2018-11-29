@@ -10,5 +10,5 @@
 - ####  <VirtualHost *:8909>
 - ####  ServerName webapp0.example.com
 - ####  DocumentRoot /var/www/web
-- ####  WsgiScriptAlias / /var/www/web/webinfo.wsgi ----->动静分离
+- ####  WsgiScriptAlias 	/	 /var/www/web/webinfo.wsgi ----->动静分离
 - ####  \<\/VirtualHost\>

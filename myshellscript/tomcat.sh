@@ -9,7 +9,7 @@ sip=${sip%.*}.254
 ####################下载并安装所需资源##########################
 mkdir /root/tomcat/
 cd /root/tomcat/
-wget $url/tools/lnmp_soft/apache-tomcat-8.0.30.tar.gz
+wget $url/tools/apache-tomcat-8.0.30.tar.gz
 tar -xf apache-tomcat-8.0.30.tar.gz
 mv /root/tomcat/apache-tomcat-8.0.30 $prefix
 

@@ -1,0 +1,83 @@
+[encoding: UTF-8]
+data/plugins/quotes/GoodreadsSource.py
+variety/Texts.py
+variety/FacebookFirstRunDialog.py
+[type: gettext/glade]data/ui/LoginOrRegisterDialog.ui
+variety/PreferencesVarietyDialog.py
+variety/Downloader.py
+[type: gettext/glade]data/ui/WelcomeDialog.ui
+variety/plugins/__init__.py
+variety/plugins/IVarietyPlugin.py
+variety/LoginOrRegisterDialog.py
+variety/indicator.py
+variety/AddMediaRssDialog.py
+variety/WelcomeDialog.py
+variety/Util.py
+[type: gettext/glade]data/ui/SmartFeaturesNoticeDialog.ui
+jumble/Jumble.py
+[type: gettext/glade]data/ui/AddPanoramioDialog.ui
+variety/MediaRssDownloader.py
+variety_lib/varietyconfig.py
+[type: gettext/glade]data/ui/FacebookPublishDialog.ui
+variety/AddWallhavenDialog.py
+variety/VarietyWindow.py
+variety/SmartFeaturesConfirmationDialog.py
+[type: gettext/glade]data/ui/FacebookFirstRunDialog.ui
+variety/ThumbsWindow.py
+variety/AvgColor.py
+variety/AddFlickrDialog.py
+data/plugins/quotes/__init__.py
+data/plugins/quotes/QuotationsPageSource.py
+variety/convert-metadata.py
+variety/APODDownloader.py
+variety/EditFavoriteOperationsDialog.py
+jumble/__init__.py
+variety/FacebookPublishDialog.py
+variety/VarietyOptionParser.py
+[type: gettext/glade]data/ui/AddRedditDialog.ui
+[type: gettext/glade]data/ui/SmartRegisterDialog.ui
+variety_lib/AboutDialog.py
+variety/FolderChooser.py
+setup.py
+variety/plugins/IQuoteSource.py
+variety/FlickrDownloader.py
+variety/__init__.py
+variety/ThumbsManager.py
+[type: gettext/glade]data/ui/AboutVarietyDialog.ui
+variety.desktop.in
+[type: gettext/glade]data/ui/AddWallhavenDialog.ui
+variety/EarthDownloader.py
+bin/variety.py
+variety/WallhavenDownloader.py
+variety_lib/PreferencesDialog.py
+data/plugins/__init__.py
+variety_lib/helpers.py
+variety_lib/Builder.py
+variety/SmartFeaturesNoticeDialog.py
+[type: gettext/glade]data/ui/AddMediaRssDialog.ui
+variety/RedditDownloader.py
+variety/FacebookHelper.py
+variety/AbstractAddByQueryDialog.py
+[type: gettext/glade]data/ui/EditFavoriteOperationsDialog.ui
+[type: gettext/glade]data/ui/SmartFeaturesConfirmationDialog.ui
+variety/BingDownloader.py
+variety/Stats.py
+jumble/IPlugin.py
+variety/AddRedditDialog.py
+variety/UnsplashDownloader.py
+variety/QuoteWriter.py
+variety/AboutVarietyDialog.py
+data/plugins/quotes/QuotesDaddySource.py
+variety/AttrDict.py
+variety/DominantColors.py
+variety/SmartRegisterDialog.py
+[type: gettext/glade]data/ui/AddFlickrDialog.ui
+variety/Options.py
+data/plugins/quotes/LocalFilesSource.py
+[type: gettext/glade]data/ui/PreferencesVarietyDialog.ui
+variety/CalibrateDominantColors.py
+variety/ImageFetcher.py
+variety/DesktopprDownloader.py
+variety/Smart.py
+variety/QuotesEngine.py
+variety_lib/__init__.py

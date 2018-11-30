@@ -1,0 +1,46 @@
+Source: variety
+Section: python
+Priority: extra
+Build-Depends: debhelper (>= 8),
+ python (>= 2.6.6-3~),
+ python-distutils-extra (>= 2.18)
+Maintainer: Peter Levi <peterlevi@peterlevi.com>
+Standards-Version: 3.9.3
+XS-Python-Version: current
+
+Package: variety
+Architecture: all
+XB-Python-Version: ${python:Versions}
+Depends: ${misc:Depends},
+ ${python:Depends},
+ gir1.2-notify-0.7,
+ python-configobj,
+ python-pyexiv2,
+ gir1.2-gtk-3.0,
+ python-dbus,
+ python-requests,
+ gir1.2-pango-1.0,
+ gir1.2-glib-2.0,
+ gir1.2-gexiv2-0.10,
+ python-pycurl,
+ python-pil,
+ python-cairo,
+ gir1.2-gdkpixbuf-2.0,
+ variety-slideshow,
+ python-bs4,
+ gir1.2-webkit-3.0,
+ gir1.2-appindicator3-0.1,
+ yelp,
+ imagemagick,
+ python-lxml,
+ python-gi-cairo
+Recommends: variety-slideshow
+Suggests: feh
+Description: Wallpaper changer, downloader and manager
+ Variety changes the desktop wallpaper regularly, using local or
+ automatically downloaded images. Variety sits conveniently as an
+ indicator in the panel and can be easily paused and resumed. The mouse
+ wheel can be used to scroll wallpapers back and forthVariety can fetch
+ wallpapers from Flickr, Wallhaven.cc, NASA Astronomy Picture of the Day,
+ Desktoppr.co. Media RSS feeds from Picasa, deviantART or any other place
+ are also supported.

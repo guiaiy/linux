@@ -12,7 +12,7 @@ hostname=`grep -m 1 $i /tmp/.godatabase | awk '{print $1}'`
 	result=`ssh $target "hostname"`
 	re=${result%%.*}
 		case $re in
-		$1) ssh -X root@$target && exit;;
+		$1) ssh -X -o StrictHostKeyChecking=no root@$target && exit;;
 		#### 如果主机名和参数$1不一致，则删除条目
 		*) sed -i "/$target/d" /tmp/.godatabase && target="" && break;;
 		esac
@@ -48,5 +48,6 @@ mountpoint="/media/virtimage"
 	#### 将主机名，ip信息加入缓存，删除缓存可能存在的空行
 	echo "$1 $ip" >> /tmp/.godatabase
 	sed -i "/^$/d" /tmp/.godatabase
-	ssh -X root@$ip
+	ssh -X -o StrictHostKeyChecking=no root@$ip
+
 fi

@@ -1,4 +1,5 @@
 #!/bin/bash
+url="https://github.com/guiaiy/linux"
 prefix=/usr/local/nginx
 ####################判断ip##########################
 eth=`nmcli connection show |  head -2 |awk '$1~/eth/{print $1}'`
@@ -8,9 +9,9 @@ sip=${sip%.*}.254
 ####################下载并安装所需资源##########################
 mkdir /root/lnmp/
 cd /root/lnmp/
-wget ftp://$sip/lnmp_soft/nginx-1.12.2.tar.gz 
-wget ftp://$sip/lnmp_soft/php-fpm-5.4.16-42.el7.x86_64.rpm 
-wget ftp://$sip/lnmp_soft/php_scripts/mysql.php 
+wget $url/tools/lnmp_soft/nginx-1.12.2.tar.gz 
+wget $url/tools/lnmp_soft/php-fpm-5.4.16-42.el7.x86_64.rpm 
+wget $url/tools/lnmp_soft/php_scripts/mysql.php 
 yum -y install mariadb-server mariadb-devel openssl-devel php php-mysql php-fpm-5.4.16-42.el7.x86_64.rpm gcc make memcached php-pecl-memcache.x86_64
 systemctl enable php-fpm
 systemctl restart php-fpm

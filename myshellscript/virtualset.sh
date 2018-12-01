@@ -68,15 +68,15 @@ DEVICE=eth4
 ONBOOT=yes
 PREFIX=24" >> $mountpoint$1/etc/sysconfig/network-scripts/ifcfg-eth4
 [ -d $mountpoint$1 ] && rm -rf $mountpoint$1/etc/hostname
-echo 'rpm -q tmux &> /dev/null ||  yum -y install tmux &> /dev/null
-tmux' >> $mountpoint$1/root/.zshrc
+echo 'rpm -q tmux &> /dev/null ||  yum -y install tmux
+rpm -q gcc &> /dev/null || yum -y install gcc' >> $mountpoint$1/root/.zshrc
 cp /root/.tmux.conf $mountpoint$1/root/.tmux.conf
 echo "${na[$1]}" >> $mountpoint$1/etc/hostname 
 [ $nip -eq 122 ] || echo "[rhel7]
 name=rhel7
 baseurl=ftp://$sip/rhel7
 enabled=1
-gpgcheck=0" >> $mountpoint$1/etc/yum.repos.d/rhel7.repo
+gpgcheck=0" > $mountpoint$1/etc/yum.repos.d/rhel7.repo
 mkdir $mountpoint$1/root/.ssh/ &> /dev/null
 \cp -rf /var/ftp/authorized_keys $mountpoint$1/root/.ssh/authorized_keys
 [ -d $mountpoint$1 ] && rm -rf $mountpoint$1/etc/resolv.conf

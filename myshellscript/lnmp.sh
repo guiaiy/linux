@@ -12,13 +12,11 @@ cd /root/lnmp/
 wget ftp://$sip/lnmp_soft/nginx-1.12.2.tar.gz 
 wget ftp://$sip/lnmp_soft/php-fpm-5.4.16-42.el7.x86_64.rpm 
 wget ftp://$sip/lnmp_soft/php_scripts/mysql.php 
-yum -y install mariadb-server mariadb-devel openssl-devel php php-mysql php-fpm-5.4.16-42.el7.x86_64.rpm gcc make memcached php-pecl-memcache.x86_64
+yum -y install mariadb-server mariadb-devel openssl-devel php php-mysql php-fpm-5.4.16-42.el7.x86_64.rpm gcc make
 systemctl enable php-fpm
 systemctl restart php-fpm
 systemctl enable mariadb
 systemctl restart mariadb
-systemctl enable memcached
-systemctl restart memcached
 tar -xf nginx-1.12.2.tar.gz
 cd nginx-1.12.2
 ./configure --prefix=$prefix --user=nginx --group=nginx --with-http_ssl_module --with-stream --with-http_stub_status_module

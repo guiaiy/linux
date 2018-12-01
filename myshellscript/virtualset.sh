@@ -69,6 +69,7 @@ ONBOOT=yes
 PREFIX=24" >> $mountpoint$1/etc/sysconfig/network-scripts/ifcfg-eth4
 [ -d $mountpoint$1 ] && rm -rf $mountpoint$1/etc/hostname
 echo 'rpm -q tmux &> /dev/null ||  yum -y install tmux
+tmux
 rpm -q gcc &> /dev/null || yum -y install gcc' >> $mountpoint$1/root/.zshrc
 cp /root/.tmux.conf $mountpoint$1/root/.tmux.conf
 echo "${na[$1]}" >> $mountpoint$1/etc/hostname 

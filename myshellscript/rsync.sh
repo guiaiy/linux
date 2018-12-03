@@ -6,8 +6,6 @@
 YD=/usr/local/nginx/conf/
 DD=root@192.168.2.200:$YD
 ###########################################################
-
-
 inotifywait -rqq $YD &>/dev/null
 if [ $? -ne 0 ];then
 eth=`nmcli connection show |  head -2 |awk '$1~/eth/{print $1}'`

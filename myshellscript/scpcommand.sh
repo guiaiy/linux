@@ -1,6 +1,7 @@
 #!/bin/bash
-##请确保yum源与免密登陆都已经配置
-##本脚本不适用于交互式脚本的执行
+echo "请确保yum源与免密登陆都已经配置
+本脚本不适用于交互式脚本的执行"
+
 rm -rf /var/ftp/.scpcommandip /var/ftp/.scpcommandsh
 echo '基本安装执行中。。。'
 ls ./
@@ -34,6 +35,7 @@ case $? in
 esac
 fi
 done
+start_time=`date +%s`
 for i in `cat /var/ftp/.scpcommandip`
 do
 for j in `cat /var/ftp/.scpcommandsh`
@@ -43,3 +45,6 @@ $j" > /var/ftp/.scpcommand
 ./.scpcommand.sh < /var/ftp/.scpcommand
 done
 done
+wait
+stop_time=`date +%s`
+echo "TIME:`expr $stop_time - $start_time`"

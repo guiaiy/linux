@@ -9,7 +9,7 @@ hostname=`grep -m 1 $i /tmp/.godatabase | awk '{print $1}'`
 	target=`grep -m 1 $hostname /tmp/.godatabase | awk '{print $2}'`
 	fi
 	if [ ! -z $target ];then
-	result=`ssh $target "hostname"`
+	result=`ssh -o StrictHostKeyChecking=no $target "hostname"`
 	re=${result%%.*}
 		case $re in
 		$1) ssh -X -o StrictHostKeyChecking=no root@$target && exit;;
@@ -35,7 +35,7 @@ mountpoint="/media/virtimage"
 	###排除回环网卡
 	[[ $i =~ lo ]] && continue
 	ip=`awk -F= '/IPADDR/{print $2}' /media/virtimage/etc/sysconfig/network-scripts/ifcfg-$i`
-	ssh $ip "pwd" &> /dev/null && break
+	ssh -o StrictHostKeyChecking=no $ip "pwd" &> /dev/null && break
 	done
 	#### 一次很难卸载干净，因此采用while监控，直到卸载为止
 	while :

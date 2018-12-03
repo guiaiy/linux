@@ -1,7 +1,6 @@
-mysql50 192.168.4.50 eth0
-mysql51 192.168.4.51 eth0
-mysql52 192.168.4.52 eth0
-mysql53 192.168.4.53 eth0
-mysql54 192.168.4.54 eth0
-mysql55 192.168.4.55 eth0
-mysql56 192.168.4.56 eth0
+192.168.4.11 redis.sh
+192.168.4.12 redis.sh
+192.168.4.13 redis.sh
+192.168.4.14 redis.sh
+192.168.4.15 redis.sh
+192.168.4.16 redis.sh

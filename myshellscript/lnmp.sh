@@ -3,8 +3,8 @@ url="https://github.com/guiaiy/linux"
 prefix=/usr/local/nginx
 ####################判断ip##########################
 eth=`nmcli connection show |  head -2 |awk '$1~/eth/{print $1}'`
-sip=`ifconfig $eth | head -2 | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | sed -n '1p'`
-sip=${sip%.*}.254
+csip=`ifconfig $eth | head -2 | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | sed -n '1p'`
+sip=${csip%.*}.254
 
 ####################下载并安装所需资源##########################
 mkdir /root/lnmp/

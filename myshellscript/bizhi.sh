@@ -16,7 +16,7 @@ if [ $num -ne $num2 ];then
 exit
 else
 t=$[RANDOM%10+50]
-\cp -f $dir/`getpic` /usr/share/backgrounds/gnome/Blinds.jpg
+\cp -f $dir/`getpic` /usr/share/backgrounds/day.jpg
 sleep $t
 fi
 done

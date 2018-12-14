@@ -21,9 +21,7 @@ alias cp="\cp -i"
 [[ -s /etc/profile.d/autojump.sh ]] && . /etc/profile.d/autojump.sh' >> /root/.zshrc
 chsh -s /bin/zsh
 cd /root
-tar -xf autojump_v21.1.2.tar.gz
-cd autojump_v21.1.2
-./install.sh
+yum -y install autojump
 cd /root/.oh-my-zsh/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git

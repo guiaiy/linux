@@ -7,7 +7,7 @@ sip=${csip%.*}.254
 yum clean all &> /dev/null
 for	syum in MON OSD Tools
 do
-echo "[$syum]
+	echo "[$syum]
 name=$syum
 baseurl=ftp://$sip/ceph/rhceph-2.0-rhel-7-x86_64/$syum
 enabled=1

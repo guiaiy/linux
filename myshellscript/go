@@ -2,9 +2,9 @@
 ####脚本放在/usr/local/bin/下,方便调用
 ####首先判断缓存是否可以登陆，不能则删除相应的条目
 [ ! -f /tmp/.godatabase ] && touch /tmp/.godatabase
-for i in `cat /tmp/.godatabase`
+for i in `awk '{print $1}' /tmp/.godatabase`
 do
-hostname=`grep -m 1 $i /tmp/.godatabase | awk '{print $1}'`
+hostname=`sed -n "/\<$i\>/p" /tmp/.godatabase | awk '{print $1}'`
 	if [ "$1" == $hostname  ];then
 	target=`grep -m 1 $hostname /tmp/.godatabase | awk '{print $2}'`
 	fi

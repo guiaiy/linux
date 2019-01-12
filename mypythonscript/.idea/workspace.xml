@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1458ac59-df47-4d43-9dcb-ff3d2181fd40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day2/caishuzi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day2/grade.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day2/login2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mypythonscript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypythonscript.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.py" beforeDir="false" afterPath="$PROJECT_DIR$/first.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myshellscript/youyisi/66caishuzi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../myshellscript/youyisi/66caishuzi.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myshellscript/youyisi/caishuzi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../myshellscript/youyisi/caishuzi.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myshellscript/youyisi/猜数字AI.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../myshellscript/youyisi/猜数字AI.sh" afterDir="false" />
-    </list>
+    <list default="true" id="1458ac59-df47-4d43-9dcb-ff3d2181fd40" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="361">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -47,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/day2/caishuzi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -96,7 +84,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,6 +100,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,7 +252,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="216" y="9" width="1426" height="1004" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988345" visible="true" weight="0.2658589" />
       <window_info id="Favorites" order="1" sideWeight="0.5011655" side_tool="true" weight="0.26158231" />
@@ -331,6 +318,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
     <entry file="file://$PROJECT_DIR$/day2/2.py" />
+    <entry file="file://$PROJECT_DIR$/first.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day2/login2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -338,24 +332,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day2/caishuzi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hnt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2/caishuzi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
